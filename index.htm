@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap">
+    <title>Lista de Tareas</title>
+</head>
+<body class="bg-dark">
+    <div class="container">
+
+        <div class="title d-block justify-content-center rounded-3 bg-primary">
+            <h1 class="text-white fw-bold text-center">Lista de Tareas por YerePF</h1>
+        </div>
+
+
+        <div class="managerList rounded text-center">
+
+            <div class="pricipalBloque justify-content-center">
+                <div class="verTareas bg-primary rounded-3">
+                
+                    <h3 class="text-white fw-bolder">Lista de tareas</h3>
+    
+                    <form action="" id="verTareasNoHechasForm">
+                        <!-- aqui se iran metiendo los items de tareas -->
+                    </form>
+                        
+                </div>
+                <div class="tareasRealizadas bg-success rounded-3">
+                    <h3 class="text-white fw-bolder">Tareas hechas</h3>
+    
+                    <form action="" id="verTareasHechasForm">
+                    </form>
+                    
+                </div>
+                <div class="agregarTarea bg-primary rounded-3">
+    
+                    <h3 class="text-white fw-bolder">Agregar tarea</h3>
+    
+                    <div class="nombre">
+                        <p class="text-white fw-bold">Nombre</p>
+                        <input type="text" placeholder="Ej: Hacer una calculadora" id="nombreInput">
+                    </div>
+                    <div class="descripcion">
+                        <p class="text-white fw-bold">Descripción</p>
+                        <input type="text" placeholder="Ej: En JS y Bootstrap..." id="descripcionInput">
+                        
+                    </div>
+                    <div class="fecha">
+                        <p class="text-white fw-bold">Fecha</p>
+                        <input type="date" id="fechaInput">
+                       
+                    </div>
+        
+                    <input type="submit" value="Agregar" class="enviar bg-success text-white fw-bold" onclick="agregarTarea()">
+    
+                </div>
+
+
+            </div>
+
+            <div class="descripcionBloque bg-primary rounded-3 d-block">
+                
+                <h3 class="text-white fw-bolder">Descripción y Fecha</h3>
+                <p id="descripcionTarea" class="text-white fw-thin">Mouse o Tap sobre la tarea para visualizar los detalles.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="javascript/script.js"></script>
+
+</body>
+</html>
